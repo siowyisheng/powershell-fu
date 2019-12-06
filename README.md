@@ -1,6 +1,12 @@
 # powershell-fu
 Useful, simple, practical powershell commands
 
+## List local environment variables
+Get-ChildItem env:
+
+## Use a local environment variable
+$env:MYVARIABLENAME
+
 ## Get number of lines in a file
 Get-Content .\myfile | Measure-Object -line
 
