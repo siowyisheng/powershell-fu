@@ -4,6 +4,9 @@ Useful, simple, practical powershell commands
 ## Open Powershell as administrator in directory
 alt, f, s, a (while at the directory in File Explorer)
 
+## Open File Explorer
+ii .
+
 ## List local environment variables
 Get-ChildItem env:
 
