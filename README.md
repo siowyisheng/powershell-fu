@@ -1,6 +1,9 @@
 # powershell-fu
 Useful, simple, practical powershell commands
 
+## Open Powershell as administrator in directory
+alt, f, s, a
+
 ## List local environment variables
 Get-ChildItem env:
 
