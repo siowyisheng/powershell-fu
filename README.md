@@ -7,6 +7,9 @@ alt, f, s, a (while at the directory in File Explorer)
 ## Open File Explorer
 ii .
 
+## Clear the screen
+clear
+
 ## List local environment variables
 Get-ChildItem env:
 
@@ -21,3 +24,7 @@ Get-Content .\myfile | Measure-Object -word
 
 ## Get number of characters in a file
 Get-Content .\myfile | Measure-Object -character
+
+## Set Up Alias Commands
+function Get-GitStatus { & git status $args }
+New-Alias -Name s -Value Get-GitStatus
