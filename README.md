@@ -6,6 +6,11 @@ Useful, simple, practical powershell commands
 alt, f, s, a (while at the directory in File Explorer)
 ```
 
+## Create an empty file
+```
+ni myfile
+```
+
 ## Open File Explorer
 ```
 ii .
