@@ -11,6 +11,11 @@ alt, f, s, a (while at the directory in File Explorer)
 ni myfile
 ```
 
+## Delete a file
+```
+rm myfile
+```
+
 ## Open File Explorer
 ```
 ii .
