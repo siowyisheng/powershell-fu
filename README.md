@@ -23,7 +23,7 @@ clear
 
 ## List local environment variables
 ```
-Get-ChildItem env:
+get-childitem env:
 ```
 
 ## Use a local environment variable
@@ -33,9 +33,9 @@ $env:MYVARIABLENAME
 
 ## Get number of lines/words/characters in a file
 ```
-Get-Content .\myfile | Measure-Object -line
-Get-Content .\myfile | Measure-Object -word
-Get-Content .\myfile | Measure-Object -character
+get-content .\myfile | measure-object -line
+get-content .\myfile | measure-object -word
+get-content .\myfile | measure-object -character
 ```
 
 ## Set up alias commands
@@ -46,6 +46,11 @@ $ code $PROFILE
 # in vscode
 function Get-GitStatus { & git status $args }
 New-Alias -Name s -Value Get-GitStatus
+```
+
+## Find out what command an alias is doing
+```
+get-alias myalias
 ```
 
 ## Restart without exiting
