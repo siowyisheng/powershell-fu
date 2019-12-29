@@ -39,13 +39,14 @@ get-content .\myfile | measure-object -character
 ```
 
 ## Set up alias commands
+This sets up `gs` as `git status`
 ```
 $ New-Item -Type file -Path $PROFILE -Force
 $ code $PROFILE
 
 # in vscode
 function Get-GitStatus { & git status $args }
-New-Alias -Name s -Value Get-GitStatus
+New-Alias -Name gs -Value Get-GitStatus
 ```
 
 ## Find out what command an alias is doing
